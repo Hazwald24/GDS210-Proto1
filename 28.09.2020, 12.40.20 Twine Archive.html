@@ -11,45 +11,148 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Butterfly Business Bureau" startnode="1" creator="Twine" creator-version="2.3.9" ifid="CA963475-0C2C-4E86-945A-71F11C803A47" zoom="0.25" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Set Up" tags="" position="3250,47" size="100,100">&quot;Butterfly Busininess Bureau&quot;
+<tw-storydata name="The Butterfly Business Bureau" startnode="1" creator="Twine" creator-version="2.3.9" ifid="CA963475-0C2C-4E86-945A-71F11C803A47" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import 'https://fonts.googleapis.com/css?family=Redressed|Coda';
+
+body {
+	background-image: url("http://i.imgur.com/Po5G2SJ.png");
+	background-size: 100%;
+}
+
+tw-story {
+
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 10%, rgba(0,0,0,0.45) 87%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 87%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 87%,rgba(0,0,0,0) 100%);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+  top: 15%;
+  transform: translateY(-50%);
+	
+	min-height: 40%;
+	padding: 2em;
+	width: 100%;
+	
+}
+
+
+tw-passage {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: rgba(255,255,255,0.75);
+	font-family: 'redressed';
+	width: 60%;
+	text-shadow: 0px 0px 3px rgba(255,255,255,0.8);
+	font-size: 30px;
+	
+}
+
+tw-link {
+	font-family: 'coda';
+	color: black;
+	text-shadow: 0px 0px 10px white;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.enchantment-link:hover, tw-link:hover {
+	color: white;
+}
+
+enchantment-link.visited, tw-link.visited {
+	text-decoration: line-through;
+}
+
+/* CSS for the page title */
+body .title {
+	font-size: 8em;
+	margin-bottom: 0px;
+	padding: none;
+	
+	
+	/* The title look */
+	color: rgba(255, 255, 255, 0.1);
+	letter-spacing: 5px;
+	text-shadow: 0px 0px 2px rgba(255,255,255,0.05);
+	font-family: 'Coda';
+}
+	
+tw-passage .chapter {
+	font-size: 1.5em;
+	text-align: center;
+	padding-bottom: 1.5em;
+	
+	color: rgba(255, 255, 255, 0.2);
+	letter-spacing: 5px;
+	text-shadow: 0px 0px 2px rgba(255,255,255,0.5);
+	font-family: 'Coda';
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Set Up" tags="" position="3250,47" size="100,100">&quot;Butterfly Busininess Bureau&quot;
 
 [[Begin-&gt;Start]]
 
 (set:$leftred to false)
 (set:$leftblue1 to false)
 (set:$leftblue2 to false)
-(set:$leftgreen to false)
+(set:$leftblue3 to false)
+(set:$leftgreen1 to false)
+(set:$leftgreen2 to false)
+(set:$leftgreen3 to false)
+(set:$leftorange to false)
 (set:$rightred to false)
 (set:$rightblue1 to false)
 (set:$rightblue2 to false)
-(set:$rightgreen to false)
-(set:$endingsCompleted to 0)</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="3530,1492" size="100,100">
+(set:$rightblue3 to false)
+(set:$rightgreen1 to false)
+(set:$rightgreen2 to false)
+(set:$rightgreen3 to false)
+(set:$rightorange to false)</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="3494,1504" size="100,100">Shit.
+Shit shit shit.
+You&#39;re late. Today of all days. Why is it things always go wrong exactly when you need them most to go right?
+First you sleep through your alarm, then your train leaves just before you get to the platform. The perfect route you planned to get to work with minimal hassle is out the window.
+So far you&#39;ve taken 2 different buses, the map said it was quicker than waiting for a train, and you&#39;re still in the middle of the city, one bus ride away from work. But will the bus be on time? Or late? The others came on time so knowing your luck this one will be late.
+The other option is trying to walk from here to work. It shouldn&#39;t take too long but you can&#39;t be sure.
 
-[[A-&gt;RightRed1.1]]
-[[A-&gt;LeftRed1.1]]
+[[The bus can&#39;t be trusted but your legs can. Walk.-&gt;RightRed1.1]]
+[[Wait for the bus, it&#39;s safer.-&gt;LeftRed1.1]]
 
-(if:$endingsCompleted is 16)[(goto:&quot;True Ending&quot;)]</tw-passagedata><tw-passagedata pid="3" name="RightRed1.1" tags="" position="3699.3333333333335,396.3333333333333" size="100,100">
+(if:$endingsCompleted is 16)[(goto:&quot;True Ending&quot;)]</tw-passagedata><tw-passagedata pid="3" name="RightRed1.1" tags="" position="3699,396" size="100,100">It&#39;s a good thing it&#39;s a cold day, you won&#39;t sweat. Too much. Hopefully. They wouldn&#39;t mind if you turned up to a meeting a little bit sweaty would they. They did, after all, specify in the email that you had to arrive 
+&quot;by any means necessary&quot;.
+You&#39;re still slighly confused by the oddness of that addition to the email, especially given you only received the email late last night. If it was so important to be there on time why didn&#39;t they give you proper warning for this upcoming meeting?
+You are keeping a decent pace as you politely push your way through the crowded streets. Right up until you catch your foot and stumble forward. You manage to regain your balance and glance back to see what it was that caught you.
+It was a bike, but the most offensively coloured bike you have ever seen. You can&#39;t see any signs of a bike lock on it, but you aren&#39;t at all surprised it hasn&#39;t been moved by greedy hands, who would want to be seen on a bike like that?
+
+[[Continue walking, you&#39;re already making good time.-&gt;RightRed1.2]]
+[[[I&#39;m sure the owner wouldn&#39;t mind if you returned it later, right?-&gt;RightBlue1.1]]](rightblue|
+
+(if: $rightred is true)(show:?rightblue)</tw-passagedata><tw-passagedata pid="4" name="LeftRed1.1" tags="" position="3295,421" size="100,100">Maybe your luck will turn and this bus won&#39;t be late either? Regardless, better to not turn up to your first big meeting drenched in sweat.
+You feel the butterflies begin to flutter as you think about it. Why are you so nervous? You don&#39;t even have to speak. Or do you? Shit, are they going to make you talk? No surely not, they would have warned you. Wouldn&#39;t they?
+Why would they? They barely warned you about this damn meeting. Who sends an email at 9pm the day before an &quot;important company-wide meeting&quot; that everyone must attend &quot;by any means necessary&quot;. Butterfly Business Bureau, that&#39;s who.
+As you are lost in thought you recognise someone across the street, it&#39;s Grace from work, your cubicle neighbour. Seems you aren&#39;t the only one running late. You watch curiously as she turns quickly into an alleyway and disappears out of sight.
+Before you have time to make sense of her actions, the bus pulls up in front of you, blocking your view.
+You check your watch; 4 minutes late. Of course.
 
 
-[[A-&gt;RightRed1.2]]
-[[[A-&gt;RightBlue1.1]]](rightblue|
+[[Get on the bus, better late than never at this point-&gt;LeftRed1.2]]
+[[[Maybe Grace knows something you don&#39;t Leave the bus and follow her.-&gt;LeftBlue1.1]]](leftblue|
 
-(if: $rightred is true)(show:?rightblue)</tw-passagedata><tw-passagedata pid="4" name="LeftRed1.1" tags="" position="3295,421.99999999999994" size="100,100">
+(if: $leftred is true)(show:?leftblue)</tw-passagedata><tw-passagedata pid="5" name="LeftBlue1.1" tags="" position="2506,591" size="100,100">You have to jog to make sure you catch up to Grace before she gets too far, but as soon as you turn into the alleyway you find her climbing onto a motorbike with a tarp sitting crumpled on the ground next to her. 
+&quot;Grace!&quot; You call out, trying to make sense of the situation.
+She turns to face you and a smile appears on her face. &quot;Oh hey! I didn&#39;t see you there. Where did you come from? No, let me guess... The bus! Yeah I tried that last time, didn&#39;t work out for me, but then I found this beauty.&quot;
+Last time? Found as in it isn&#39;t hers? What is happen-
+&quot;Come on, enough time wasted, we need to get moving. I&#39;m pretty sure I know a short cut.&quot;
+
+[[She&#39;s right, questions later, first get to work.-&gt;LeftBlue1.2]]
+[[[That doesn&#39;t sound very convinving, offer to drive instead.-&gt;LeftGreen1.1]]](leftgreen1|
+
+(if: $leftblue1 is true)(show:?leftgreen1)</tw-passagedata><tw-passagedata pid="6" name="RightRed1.2" tags="" position="3699,601" size="100,100">You press on, time is off the essence and that essence is a limited resource. You can already feel the sweat coming on, you just keep praying it can go unnoticed.
+As you continue along, maintaining a good pace, you hear a strange noise in the distance. You brush it aside to focus on your journey. Then you hear it again. Louder this time.
+As you pass a sidestreet you realise what the sound is. You see an older man being accosted next to a car by a brute. He is calling out for help but he doesn&#39;t seem in danger of real harm... It&#39;s probably just a theft attempt.
 
 
-[[A-&gt;LeftRed1.2]]
-[[[A-&gt;LeftBlue1.1]]](leftblue|
-
-(if: $leftred is true)(show:?leftblue)</tw-passagedata><tw-passagedata pid="5" name="LeftBlue1.1" tags="" position="2506.6666666666665,591.3333333333334" size="100,100">
-
-
-[[A-&gt;LeftBlue1.2]]
-[[[A-&gt;LeftGreen1.1]]](leftgreen1|
-
-(if: $leftblue1 is true)(show:?leftgreen1)</tw-passagedata><tw-passagedata pid="6" name="RightRed1.2" tags="" position="3699.6666666666665,601.6666666666666" size="100,100">
-
-[[A-&gt;RightRed1.3]]
-[[[A-&gt;RightBlue2.1]]](rightblue|
+[[There are lots of people that can help, you need to get to work-&gt;RightRed1.3]]
+[[[You should do the right thing, and maybe he can help you in return?-&gt;RightBlue2.1]]](rightblue|
 
 (if: $rightred is true)(show:?rightblue)</tw-passagedata><tw-passagedata pid="7" name="RightBlue1.1" tags="" position="4501,598" size="100,100">
 
@@ -57,115 +160,126 @@
 [[A-&gt;RightBlue1.2]]
 [[[A-&gt;RightGreen1.1]]](rightgreen1|
 
-(if: $rightblue1 is true)(show:?rightgreen1)</tw-passagedata><tw-passagedata pid="8" name="LeftRed1.2" tags="" position="3298.3333333333335,597" size="100,100">
+(if: $rightblue1 is true)(show:?rightgreen1)</tw-passagedata><tw-passagedata pid="8" name="LeftRed1.2" tags="" position="3298,597" size="100,100">The bus is completely packed, but that&#39;s not surprising. You barely manage to push yourself onto the bus before the doors close behind you and you take off.
+The crowd slowly disperses across the bus, giving you a small amount of room to breathe, as you try to make yourself comfortable standing against ths side of a seat and focus on the day ahead of you.
+You seem to be making pretty good time, you&#39;re hitting lots of green lights and very few people are getting on at these stops. You start to take off from the next stop when you see someone running up towards the bus. You go to alert the driver, given you are closest to them, but you hesitate.
+You&#39;ve made so much time so far, you might actually make it to work on time at this point, and the email last night didn&#39;t make it seem like they would take well to tardiness.
 
 
-[[A-&gt;LeftRed1.3]]
-[[[A-&gt;LeftBlue2.1]]](leftblue|
+[[Stay quiet and let the bus take off.-&gt;LeftRed1.3]]
+[[[Call out to the driver, what difference will 30 seconds really make?-&gt;LeftBlue2.1]]](leftblue|
 
-(if: $leftred is true)(show:?leftblue)</tw-passagedata><tw-passagedata pid="9" name="LeftRed1.3" tags="" position="3299.9999999999995,800.3333333333333" size="100,100">
+(if: $leftred is true)(show:?leftblue)</tw-passagedata><tw-passagedata pid="9" name="LeftRed1.3" tags="" position="3299,800" size="100,100">
+
 
 [[A-&gt;LeftRed1.4]]
 [[[A-&gt;LeftBlue3.1]]](leftblue|
 
-(if: $leftred is true)(show:?leftblue)</tw-passagedata><tw-passagedata pid="10" name="LeftBlue2.1" tags="" position="2901.6666666666665,802" size="100,100">
+(if: $leftred is true)(show:?leftblue)</tw-passagedata><tw-passagedata pid="10" name="LeftBlue2.1" tags="" position="2901,802" size="100,100">
 
 
 [[A-&gt;LeftBlue2.2]]
 [[[A-&gt;LeftGreen3.1]]](leftgreen3|
 
-(if: $leftblue2 is true)(show:?leftgreen3)</tw-passagedata><tw-passagedata pid="11" name="LeftRed1.4" tags="" position="3298.333333333333,1000.3333333333333" size="100,100">
+(if: $leftblue2 is true)(show:?leftgreen3)</tw-passagedata><tw-passagedata pid="11" name="LeftRed1.4" tags="" position="3298,1000" size="100,100">
 
 [[A-&gt;Start]]
 (set:$leftred to true)
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="12" name="LeftBlue3.1" tags="" position="3107.3333333333326,996.9999999999999" size="100,100">
+(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="12" name="LeftBlue3.1" tags="" position="3107,996" size="100,100">
 
 [[A-&gt;Start]]
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="13" name="RightRed1.3" tags="" position="3698,803.3333333333334" size="100,100">
+(set:$leftblue3 to true)</tw-passagedata><tw-passagedata pid="13" name="RightRed1.3" tags="" position="3699.6666666666665,803" size="100,100">You power forward, refusing to glance to the side, as the sounds slowly fade into the background. You are so close to work now and the speed you&#39;ve kept has made up a few minutes, you&#39;re so close to being on time.
+You turn a corner to see your office only one block away. You pick up the pace even more, you&#39;ve already started sweating, no point holding back now. A smile begins to grow on your face, you&#39;ve made up for a lot of your lost time.
+As you approach the front doors, you see a young girl, probably no older than 6, quietly sobbing. The world continues to move around her as you get closer and closer to her and the door.
 
-[[A-&gt;RightRed1.4]]
-[[[A-&gt;RightBlue3.1]]](rightblue|
+[[No distractions, you&#39;ve come this far-&gt;RightRed1.4]]
+[[[Help the girl-&gt;RightBlue3.1]]](rightblue|
 
-(if: $rightred is true)(show:?rightblue)</tw-passagedata><tw-passagedata pid="14" name="RightBlue2.1" tags="" position="4096.333333333334,798.3333333333331" size="100,100">
+(if: $rightred is true)(show:?rightblue)</tw-passagedata><tw-passagedata pid="14" name="RightBlue2.1" tags="" position="4096,798" size="100,100">You poise yourself, try to make an intimidating face and make your way towards the two men. As you approach, the brute looks towards you, then back down to the older man, then back to you.
+&quot;Ah heck, I&#39;m not looking for this much trouble.&quot; He shoves the man up against the car and then takes off running in the opposite direction to you.
+You&#39;re left feeling confused by the by the altercation, and your adrenaline is still up with no release.
 
 
 [[A-&gt;RightBlue2.2]]
 [[[A-&gt;RightGreen3.1]]](rightgreen3|
 
-(if: $rightblue2 is true)(show:?rightgreen3)</tw-passagedata><tw-passagedata pid="15" name="RightRed1.4" tags="" position="3701.3333333333335,1003.3333333333334" size="100,100">
+(if: $rightblue2 is true)(show:?rightgreen3)</tw-passagedata><tw-passagedata pid="15" name="RightRed1.4" tags="" position="3701,1001.3333333333334" size="100,100">You leave behind the girl and swipe your card at the doors, pushing your way through. You make a beeline for the stairs, it&#39;s only 3 levels, and once you&#39;re inside you take 2 steps at a time, speeding up the stairwell.
+You burst through the doors, trying to maintain your composure as you keep a brisk pace down the corridors.
+You can see it. The light at the end of the tunnel. The door at the end of the hallway. You push forward and open the doors to the meeting room, and find a sea of eyes staring back at you. About half of the chairs at the table are filled, does that mean others were late.
+In front of you stand three of your superiors who seem to be running the meeting. One of them looks up from his watch to you and the look in his eyes is that of disappointment.
+&quot;One minute late. You were close, but late nonetheless. Better luck next time.&quot;
+
+[[Try Again-&gt;Start]]
+(set:$rightred to true)</tw-passagedata><tw-passagedata pid="16" name="RightBlue3.1" tags="" position="3901,1003" size="100,100">You walk up to the girl and kneel down to get to her eye level but before you can say anything she cries out, pushing past you and running off down the street.
+You decide that you don&#39;t have time to waste following the child so you curse yourself for the wasted time and head back to the doors. As you get to the door you realise something; your ID card is gone. You can&#39;t get in. You swear you had it before, you double checked before leaving home you... Was it the girl? Did you get pickpocketed? Today? Of all days?
+You&#39;re forced to wait until someone comes running up to the door, opening it, as you push in through the doors behind them.
+By the time you make it to the top of the office, you already know what&#39;s going to happen. Your supervisor looks up from his watch to you.
+&quot;4 minutes late. A shame. Better luck next time.&quot;
 
 [[A-&gt;Start]]
-(set:$rightred to true)
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="16" name="RightBlue3.1" tags="" position="3901.3333333333335,1003.3333333333334" size="100,100">
-
-[[A-&gt;Start]]
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="17" name="LeftBlue2.2" tags="" position="2905.6666666666665,998" size="100,100">
+(set:$rightblue3 to true)</tw-passagedata><tw-passagedata pid="17" name="LeftBlue2.2" tags="" position="2905,998" size="100,100">
 
 [[A-&gt;Start]]
 (set:$leftblue2 to true)
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="18" name="LeftGreen3.1" tags="" position="2701.6666666666665,1002" size="100,100">
+</tw-passagedata><tw-passagedata pid="18" name="LeftGreen3.1" tags="" position="2701,1002" size="100,100">
 
 [[A-&gt;Start]]
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="19" name="LeftBlue1.2" tags="" position="2500,798" size="100,100">
+(set:$leftgreen3 to true)</tw-passagedata><tw-passagedata pid="19" name="LeftBlue1.2" tags="" position="2501,798" size="100,100">
 
 
 [[A-&gt;LeftBlue1.3]]
 [[[A-&gt;LeftGreen2.1]]](leftgreen2|
 
-(if: $leftblue1 is true)(show:?leftgreen2)</tw-passagedata><tw-passagedata pid="20" name="LeftGreen2.1" tags="" position="2298.333333333333,1003" size="100,100">
+(if: $leftblue1 is true)(show:?leftgreen2)</tw-passagedata><tw-passagedata pid="20" name="LeftGreen2.1" tags="" position="2298,1001.3333333333334" size="100,100">
 
 [[A-&gt;Start]]
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="21" name="LeftBlue1.3" tags="" position="2501.6666666666665,1001.3333333333334" size="100,100">
+(set:$leftgreen2 to true)</tw-passagedata><tw-passagedata pid="21" name="LeftBlue1.3" tags="" position="2501,1001" size="100,100">
 
 [[A-&gt;Start]]
-(set:$leftblue1 to true)
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="22" name="LeftGreen1.1" tags="" position="2105,798" size="100,100">
+(set:$leftblue1 to true)</tw-passagedata><tw-passagedata pid="22" name="LeftGreen1.1" tags="" position="2105,798" size="100,100">
 
 
 [[A-&gt;LeftGreen1.2]]
 [[[A-&gt;LeftOrange1.1]]](leftorange1|
 
-(if: $leftgreen1 is true)(show:?leftorange1)</tw-passagedata><tw-passagedata pid="23" name="LeftGreen1.2" tags="" position="2101.6666666666665,1003" size="100,100">
+(if: $leftgreen is true)(show:?leftorange1)</tw-passagedata><tw-passagedata pid="23" name="LeftGreen1.2" tags="" position="2101,1003" size="100,100">
 
 [[A-&gt;Start]]
-(set:$leftgreen to true)
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="24" name="LeftOrange1.1" tags="" position="1900,999.6666666666666" size="100,100">
+(set:$leftgreen1 to true)</tw-passagedata><tw-passagedata pid="24" name="LeftOrange1.1" tags="" position="1900,999" size="100,100">
 
 [[A-&gt;Start]]
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="25" name="RightBlue1.2" tags="" position="4501,803" size="100,100">
+(set:$leftorange to true)</tw-passagedata><tw-passagedata pid="25" name="RightBlue1.2" tags="" position="4501,803" size="100,100">
 
 
 [[A-&gt;RightBlue1.3]]
 [[[A-&gt;RightGreen2.1]]](rightgreen2|
 
-(if: $rightblue1 is true)(show:?rightgreen2)</tw-passagedata><tw-passagedata pid="26" name="RightGreen1.1" tags="" position="4899.333333333334,803" size="100,100">
+(if: $rightblue1 is true)(show:?rightgreen2)</tw-passagedata><tw-passagedata pid="26" name="RightGreen1.1" tags="" position="4899,803" size="100,100">
 
 
 [[A-&gt;RightGreen1.2]]
 [[[A-&gt;RightOrange1.1]]](rightorange1|
 
-(if: $rightgreen1 is true)(show:?rightorange1)</tw-passagedata><tw-passagedata pid="27" name="RightBlue2.2" tags="" position="4103.000000000001,1001.6666666666665" size="100,100">
+(if: $rightgreen1 is true)(show:?rightorange1)</tw-passagedata><tw-passagedata pid="27" name="RightBlue2.2" tags="" position="4103,1001" size="100,100">
 
 [[A-&gt;Start]]
 (set:$rightblue2 to true)
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="28" name="RightGreen3.1" tags="" position="4299.666666666667,999.9999999999998" size="100,100">
+</tw-passagedata><tw-passagedata pid="28" name="RightGreen3.1" tags="" position="4299,999" size="100,100">
 
 [[A-&gt;Start]]
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="29" name="RightBlue1.3" tags="" position="4505,996.3333333333334" size="100,100">
+(set:$rightgreen3 to true)</tw-passagedata><tw-passagedata pid="29" name="RightBlue1.3" tags="" position="4505,996" size="100,100">
 
 [[A-&gt;Start]]
-(set:$rightblue1 to true)
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="30" name="RightGreen2.1" tags="" position="4704.333333333333,998" size="100,100">
+(set:$rightblue1 to true)</tw-passagedata><tw-passagedata pid="30" name="RightGreen2.1" tags="" position="4704,998" size="100,100">
 
 [[A-&gt;Start]]
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="31" name="RightGreen1.2" tags="" position="4905.000000000001,995.6666666666666" size="100,100">
+(set:$rightgreen2 to true)</tw-passagedata><tw-passagedata pid="31" name="RightGreen1.2" tags="" position="4905,995" size="100,100">
 
 [[A-&gt;Start]]
-(set:$rightgreen1 to true)
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="32" name="RightOrange1.1" tags="" position="5099.333333333334,999.6666666666667" size="100,100">
+(set:$rightgreen1 to true)</tw-passagedata><tw-passagedata pid="32" name="RightOrange1.1" tags="" position="5099,999" size="100,100">
 
 [[A-&gt;Start]]
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="33" name="True Ending" tags="" position="3528,1720" size="100,100">The truest ending</tw-passagedata></tw-storydata>
+(set:$rightorange to true)</tw-passagedata><tw-passagedata pid="33" name="True Ending" tags="" position="3500,1696" size="100,100">The truest ending</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
