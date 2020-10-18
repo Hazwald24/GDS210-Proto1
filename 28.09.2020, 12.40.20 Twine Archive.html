@@ -11,84 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Butterfly Business Bureau" startnode="1" creator="Twine" creator-version="2.3.9" ifid="CA963475-0C2C-4E86-945A-71F11C803A47" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import 'https://fonts.googleapis.com/css?family=Redressed|Coda';
-
-body {
-	background-image: url("http://i.imgur.com/Po5G2SJ.png");
-	background-size: 100%;
-}
-
-tw-story {
-
-	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 10%, rgba(0,0,0,0.45) 87%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 87%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 87%,rgba(0,0,0,0) 100%);
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-  top: 15%;
-  transform: translateY(-50%);
-	
-	min-height: 40%;
-	padding: 2em;
-	width: 100%;
-	
-}
-
-
-tw-passage {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	color: rgba(255,255,255,0.75);
-	font-family: 'redressed';
-	width: 60%;
-	text-shadow: 0px 0px 3px rgba(255,255,255,0.8);
-	font-size: 30px;
-	
-}
-
-tw-link {
-	font-family: 'coda';
-	color: black;
-	text-shadow: 0px 0px 10px white;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-.enchantment-link:hover, tw-link:hover {
-	color: white;
-}
-
-enchantment-link.visited, tw-link.visited {
-	text-decoration: line-through;
-}
-
-/* CSS for the page title */
-body .title {
-	font-size: 8em;
-	margin-bottom: 0px;
-	padding: none;
-	
-	
-	/* The title look */
-	color: rgba(255, 255, 255, 0.1);
-	letter-spacing: 5px;
-	text-shadow: 0px 0px 2px rgba(255,255,255,0.05);
-	font-family: 'Coda';
-}
-	
-tw-passage .chapter {
-	font-size: 1.5em;
-	text-align: center;
-	padding-bottom: 1.5em;
-	
-	color: rgba(255, 255, 255, 0.2);
-	letter-spacing: 5px;
-	text-shadow: 0px 0px 2px rgba(255,255,255,0.5);
-	font-family: 'Coda';
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Set Up" tags="" position="3250,47" size="100,100">&quot;Butterfly Busininess Bureau&quot;
+<tw-storydata name="The Butterfly Business Bureau" startnode="1" creator="Twine" creator-version="2.3.9" ifid="CA963475-0C2C-4E86-945A-71F11C803A47" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Set Up" tags="" position="3248,47" size="100,100">&quot;Butterfly Busininess Bureau&quot;
 
 [[Begin-&gt;Start]]
 
@@ -107,7 +30,8 @@ tw-passage .chapter {
 (set:$rightgreen1 to false)
 (set:$rightgreen2 to false)
 (set:$rightgreen3 to false)
-(set:$rightorange to false)</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="3494,1504" size="100,100">Shit.
+(set:$rightorange to false)
+(set:$endingscompleted to 0)</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="3495,1504" size="100,100">Shit.
 Shit shit shit.
 You&#39;re late. Today of all days. Why is it things always go wrong exactly when you need them most to go right?
 First you sleep through your alarm, then your train leaves just before you get to the platform. The perfect route you planned to get to work with minimal hassle is out the window.
@@ -117,7 +41,7 @@ The other option is trying to walk from here to work. It shouldn&#39;t take too 
 [[The bus can&#39;t be trusted but your legs can. Walk.-&gt;RightRed1.1]]
 [[Wait for the bus, it&#39;s safer.-&gt;LeftRed1.1]]
 
-(if:$endingsCompleted is 16)[(goto:&quot;True Ending&quot;)]</tw-passagedata><tw-passagedata pid="3" name="RightRed1.1" tags="" position="3699,396" size="100,100">It&#39;s a good thing it&#39;s a cold day, you won&#39;t sweat. Too much. Hopefully. They wouldn&#39;t mind if you turned up to a meeting a little bit sweaty would they. They did, after all, specify in the email that you had to arrive 
+(if:$objectivescomplete is 16)[(goto:&quot;True Ending&quot;)]</tw-passagedata><tw-passagedata pid="3" name="RightRed1.1" tags="" position="3700,394" size="100,100">It&#39;s a good thing it&#39;s a cold day, you won&#39;t sweat. Too much. Hopefully. They wouldn&#39;t mind if you turned up to a meeting a little bit sweaty would they. They did, after all, specify in the email that you had to arrive 
 &quot;by any means necessary&quot;.
 You&#39;re still slighly confused by the oddness of that addition to the email, especially given you only received the email late last night. If it was so important to be there on time why didn&#39;t they give you proper warning for this upcoming meeting?
 You are keeping a decent pace as you politely push your way through the crowded streets. Right up until you catch your foot and stumble forward. You manage to regain your balance and glance back to see what it was that caught you.
@@ -144,7 +68,7 @@ Last time? Found as in it isn&#39;t hers? What is happen-
 &quot;Come on, enough time wasted, we need to get moving. I&#39;m pretty sure I know a short cut.&quot;
 
 [[She&#39;s right, questions later, first get to work.-&gt;LeftBlue1.2]]
-[[[That doesn&#39;t sound very convinving, offer to drive instead.-&gt;LeftGreen1.1]]](leftgreen1|
+[[[That doesn&#39;t sound very convincing, suggest you take the main roads.-&gt;LeftGreen1.1]]](leftgreen1|
 
 (if: $leftblue1 is true)(show:?leftgreen1)</tw-passagedata><tw-passagedata pid="6" name="RightRed1.2" tags="" position="3699,601" size="100,100">You press on, time is off the essence and that essence is a limited resource. You can already feel the sweat coming on, you just keep praying it can go unnoticed.
 As you continue along, maintaining a good pace, you hear a strange noise in the distance. You brush it aside to focus on your journey. Then you hear it again. Louder this time.
@@ -154,13 +78,15 @@ As you pass a sidestreet you realise what the sound is. You see an older man bei
 [[There are lots of people that can help, you need to get to work-&gt;RightRed1.3]]
 [[[You should do the right thing, and maybe he can help you in return?-&gt;RightBlue2.1]]](rightblue|
 
-(if: $rightred is true)(show:?rightblue)</tw-passagedata><tw-passagedata pid="7" name="RightBlue1.1" tags="" position="4501,598" size="100,100">
+(if: $rightred is true)(show:?rightblue)</tw-passagedata><tw-passagedata pid="7" name="RightBlue1.1" tags="" position="4499,598" size="100,100">You grab the bike from it&#39;s spot leaning up against the wall and sit yourself on it. Luckily it&#39;s set for someone of your height and requires no adjusting as you take off. 
+You begin to smile to yourself as you realise you might just be able to make up the time by riding the bike. The smile fades as soon as you hear a void behind you.
+&quot;Hey! You on the bike! What are you doing with my bike?!&quot;
+You glance over your shoulder to see a woman in a full clown costume chasing after you in comically large clown shoes.
 
+[[You have no time for clown antics, you&#39;ll ask for forgiveness later.-&gt;RightBlue1.2]]
+[[[Best not to try the patience of a clown. You decide to surrender.-&gt;RightGreen1.1]]](rightgreen1|
 
-[[A-&gt;RightBlue1.2]]
-[[[A-&gt;RightGreen1.1]]](rightgreen1|
-
-(if: $rightblue1 is true)(show:?rightgreen1)</tw-passagedata><tw-passagedata pid="8" name="LeftRed1.2" tags="" position="3298,597" size="100,100">The bus is completely packed, but that&#39;s not surprising. You barely manage to push yourself onto the bus before the doors close behind you and you take off.
+(if: $rightblue1 is true)(show:?rightgreen1)</tw-passagedata><tw-passagedata pid="8" name="LeftRed1.2" tags="" position="3299.6666666666665,597" size="100,100">The bus is completely packed, but that&#39;s not surprising. You barely manage to push yourself onto the bus before the doors close behind you and you take off.
 The crowd slowly disperses across the bus, giving you a small amount of room to breathe, as you try to make yourself comfortable standing against ths side of a seat and focus on the day ahead of you.
 You seem to be making pretty good time, you&#39;re hitting lots of green lights and very few people are getting on at these stops. You start to take off from the next stop when you see someone running up towards the bus. You go to alert the driver, given you are closest to them, but you hesitate.
 You&#39;ve made so much time so far, you might actually make it to work on time at this point, and the email last night didn&#39;t make it seem like they would take well to tardiness.
@@ -169,73 +95,124 @@ You&#39;ve made so much time so far, you might actually make it to work on time 
 [[Stay quiet and let the bus take off.-&gt;LeftRed1.3]]
 [[[Call out to the driver, what difference will 30 seconds really make?-&gt;LeftBlue2.1]]](leftblue|
 
-(if: $leftred is true)(show:?leftblue)</tw-passagedata><tw-passagedata pid="9" name="LeftRed1.3" tags="" position="3299,800" size="100,100">
+(if: $leftred is true)(show:?leftblue)</tw-passagedata><tw-passagedata pid="9" name="LeftRed1.3" tags="" position="3300,800" size="100,100">The bus pulls away and you keep your eyes forward to avoid making eye contact with the straggler and feeling guilty for leaving them behind. You&#39;re sure they&#39;ll get wherever they are going eventually. You just need to get to work on time.
+You begin to relax now that the bus is approaching work, and you realise you should actually make it on time. Your stop is the next one so you move forward ready to get off.
+The bus comes to a stop and you finally take in the state of the road ahead of you. The traffic is insane. It will take you at least a few minutes to get through this intersection and you only have 2 minutes to get to work on time.
+You ask the bus driver politely to open the doors so you can get off here but she refuses to do it, says it&#39;s for your own safety. You begin to shift your weight anxiously as the bus slowly moves forward a few metres then stops again.
+You notice the emergency exit button next to the door and look from it to the driver then back again. It&#39;s tempting, but are you willing to risk the consequences just to get to work on time?
 
 
-[[A-&gt;LeftRed1.4]]
-[[[A-&gt;LeftBlue3.1]]](leftblue|
+[[No, being late is better than being arrested.-&gt;LeftRed1.4]]
+[[[Yes, if you&#39;re lucky you&#39;ll be done with the meeting before any trouble comes looking.-&gt;LeftBlue3.1]]](leftblue|
 
-(if: $leftred is true)(show:?leftblue)</tw-passagedata><tw-passagedata pid="10" name="LeftBlue2.1" tags="" position="2901,802" size="100,100">
+(if: $leftred is true)(show:?leftblue)</tw-passagedata><tw-passagedata pid="10" name="LeftBlue2.1" tags="" position="2901,802" size="100,100">You quickly alert the driver to the trailing passenger and the bus comes to a sudden stop just as it is taking off. Even just the few seconds that you are left waiting feel grating as and your hope of being on time becomes weaker and weaker.
+As the passenger steps up onto the bus you suddenly recognise them, it&#39;s Derrek from work. He looks up to you and grins, &quot;oh hey, thanks for that, it&#39;s much appreciated. I&#39;ve got a little secret to share with you in return, it&#39;s at the next stop. We should get off there before we are caught in traffic.&quot;
+He smiles with a mischevious grin but refuses to go into any further detail. You begrugingly accept that whatever it is, will probably afford you a better chance than staying on the bus.
+As the bus pulls up to the next stop, Derrek clambers out and you follow close behind as he jogs across the road. You look ahead and see a segway chained to a tree with a bike lock.
+You watch with curiosity as Derrek bends down and enters a series of digits to unlock the chain. He then looks to you with a smile as he gestures towards the segway, &quot;ta-da! Took me a fair few tries but I finally got the code, certainly worth the effort. Would you care to join me? It will be a tight squeeze but I owe you.&quot;
 
 
-[[A-&gt;LeftBlue2.2]]
-[[[A-&gt;LeftGreen3.1]]](leftgreen3|
+[[Accept the offer and climb onto the segway with him.-&gt;LeftBlue2.2]]
+[[[Two people will just unbalance the segway, take the segway for yourself-&gt;LeftGreen3.1]]](leftgreen3|
 
-(if: $leftblue2 is true)(show:?leftgreen3)</tw-passagedata><tw-passagedata pid="11" name="LeftRed1.4" tags="" position="3298,1000" size="100,100">
+(if: $leftblue2 is true)(show:?leftgreen3)</tw-passagedata><tw-passagedata pid="11" name="LeftRed1.4" tags="" position="3296,1000" size="100,100">You decide you&#39;re better off staying on the bus and relax yourself up against the door. The slow traffic is excruciating but finally you make it to the bus stop, push your way off and jog over to your office building.
+You walk up to the door and swipe your card, pushing your way through. You make a beeline for the stairs, it should save time, and end up skipping every few stairs.
+You hastily exit into the corridor on your floor and make a brisk pace as you head towards the meeting room. Left turn. Right turn. One more left.
+You can see it. The light at the end of the tunnel. The door at the end of the hallway. You push forward and open the doors to the meeting room, and find a sea of eyes staring back at you. About half of the chairs at the table are filled, does that mean others were late too?
+In front of you stand three of your superiors who seem to be running the meeting. One of them looks up from his watch to you and the look in his eyes is that of disappointment.
+&quot;Two minutes late. You were close, but late nonetheless. Better luck next time.&quot;
 
-[[A-&gt;Start]]
-(set:$leftred to true)
-(set:$endingsCompleted to it + 1)</tw-passagedata><tw-passagedata pid="12" name="LeftBlue3.1" tags="" position="3107,996" size="100,100">
+[[Try Again-&gt;Start]]
+(if:$leftred is false)[(set:$endingscompleted to it + 1)]
+(set:$leftred to true)</tw-passagedata><tw-passagedata pid="12" name="LeftBlue3.1" tags="" position="3107,996" size="100,100">You prepare yourself to run, make a sideways glance at the driver. She&#39;s not watching. You take a deep breath, and slam your first onto the button. There is a hiss and the doors slide open and suddenly a commotion erupts as the passengers start talking trying to figure out what has happened.
+Before the driver can stop you, you&#39;ve stepped off the bus and begun your sprint. Hopefully, the fine isn&#39;t too expensive. You swerve through the stopped traffic, to the sounds of car horns and shouting behind you.
+You look back over your shoulder, and see someone chasing you. It&#39;s a public safety officer. They were on the bus in plain clothes, but they are gaining fast and yelling at you to stop.
+Your adrenaline spikes and fear sets in as they clearly have an excellent running form. You stand no chance. Just as you step onto the footpath you are grabbed on the shoulder, by the PSO.
+They forcefully spin you around to face them and you quickly realise escape is futile. You are subjected to a barrage of strong words and warnings as the PSO dresses you down verbally.
+Eventually they run out of breath, and finally get around to taking your details to make a full report. The process is lengthy, and they seem content with taking time.
+You are finally let free, with a promise of a hefty fine in the mail within 5-10 business days. You walk quickly towards your office and enter inside. You try to make your way quickly to the meeting, but you are still embarassed from that public display.
+Once you get into the meeting room, your three superiors are watching you, and you feel, quite unreasonably, that they are judging you. One of them looks up from a watch and says &quot;6 minutes late. Reasonable, but not good enough still. Better luck next time.&quot;
 
-[[A-&gt;Start]]
-(set:$leftblue3 to true)</tw-passagedata><tw-passagedata pid="13" name="RightRed1.3" tags="" position="3699.6666666666665,803" size="100,100">You power forward, refusing to glance to the side, as the sounds slowly fade into the background. You are so close to work now and the speed you&#39;ve kept has made up a few minutes, you&#39;re so close to being on time.
+[[Try Again-&gt;Start]]
+(if:$leftblue3 is false)[(set:$endingscompleted to it + 1)]
+(set:$leftblue3 to true)</tw-passagedata><tw-passagedata pid="13" name="RightRed1.3" tags="" position="3699,803" size="100,100">You power forward, refusing to glance to the side, as the sounds slowly fade into the background. You are so close to work now and the speed you&#39;ve kept has made up a few minutes, you&#39;re so close to being on time.
 You turn a corner to see your office only one block away. You pick up the pace even more, you&#39;ve already started sweating, no point holding back now. A smile begins to grow on your face, you&#39;ve made up for a lot of your lost time.
 As you approach the front doors, you see a young girl, probably no older than 6, quietly sobbing. The world continues to move around her as you get closer and closer to her and the door.
 
 [[No distractions, you&#39;ve come this far-&gt;RightRed1.4]]
 [[[Help the girl-&gt;RightBlue3.1]]](rightblue|
 
-(if: $rightred is true)(show:?rightblue)</tw-passagedata><tw-passagedata pid="14" name="RightBlue2.1" tags="" position="4096,798" size="100,100">You poise yourself, try to make an intimidating face and make your way towards the two men. As you approach, the brute looks towards you, then back down to the older man, then back to you.
-&quot;Ah heck, I&#39;m not looking for this much trouble.&quot; He shoves the man up against the car and then takes off running in the opposite direction to you.
-You&#39;re left feeling confused by the by the altercation, and your adrenaline is still up with no release.
+(if: $rightred is true)(show:?rightblue)</tw-passagedata><tw-passagedata pid="14" name="RightBlue2.1" tags="" position="4097,798" size="100,100">You poise yourself, try to make an intimidating face and make your way towards the two men. As you approach, the brute looks towards you, then back down to the older man, then back to you.
+As he looks at you you realise you may have misjudged your ability to help in this situation and start to reconsider your choice in being here. He steps forward, towering over you, a cruel look in his eyes.
+You hold your ground, hoping that if you can avoid provoking him, you may be able to get out of this relatively unharmed. You try to hold his gaze but squirm under his intense stare and instead look past him to where you see the older man brandishing a folded umbrella.
+He gives you a knowing wink and jabs the point of the umbrella into the back of the brute&#39;s knee, bringing him down onto it, before flipping the umbrella, and with more grace and strength than his body would imply, slams the handle into the brute&#39;s head, knocking him unconscious.
+You are left stunned as the body lands next to you.
+&quot;Thanks for that distraction, it&#39;s all I needed. Can I repay you some way? Were you headed somewhere? I can give you a lift if you would like.&quot;
 
 
-[[A-&gt;RightBlue2.2]]
-[[[A-&gt;RightGreen3.1]]](rightgreen3|
+[[You are still rattled from the experience and don&#39;t quite trust he is safe to be around. You decide to walk.-&gt;RightBlue2.2]]
+[[[Safe or not, going with him may be the only chance of arriving on time now.-&gt;RightGreen3.1]]](rightgreen3|
 
-(if: $rightblue2 is true)(show:?rightgreen3)</tw-passagedata><tw-passagedata pid="15" name="RightRed1.4" tags="" position="3701,1001.3333333333334" size="100,100">You leave behind the girl and swipe your card at the doors, pushing your way through. You make a beeline for the stairs, it&#39;s only 3 levels, and once you&#39;re inside you take 2 steps at a time, speeding up the stairwell.
+(if: $rightblue2 is true)(show:?rightgreen3)</tw-passagedata><tw-passagedata pid="15" name="RightRed1.4" tags="" position="3704,999" size="100,100">You leave behind the girl and swipe your card at the doors, pushing your way through. You make a beeline for the stairs, it&#39;s only 3 levels, and once you&#39;re inside you take 2 steps at a time, speeding up the stairwell.
 You burst through the doors, trying to maintain your composure as you keep a brisk pace down the corridors.
-You can see it. The light at the end of the tunnel. The door at the end of the hallway. You push forward and open the doors to the meeting room, and find a sea of eyes staring back at you. About half of the chairs at the table are filled, does that mean others were late.
+You can see it. The light at the end of the tunnel. The door at the end of the hallway. You push forward and open the doors to the meeting room, and find a sea of eyes staring back at you. About half of the chairs at the table are filled, does that mean others were late?
 In front of you stand three of your superiors who seem to be running the meeting. One of them looks up from his watch to you and the look in his eyes is that of disappointment.
 &quot;One minute late. You were close, but late nonetheless. Better luck next time.&quot;
 
 [[Try Again-&gt;Start]]
+(if:$rightred is false)[(set:$endingscompleted to it + 1)]
 (set:$rightred to true)</tw-passagedata><tw-passagedata pid="16" name="RightBlue3.1" tags="" position="3901,1003" size="100,100">You walk up to the girl and kneel down to get to her eye level but before you can say anything she cries out, pushing past you and running off down the street.
 You decide that you don&#39;t have time to waste following the child so you curse yourself for the wasted time and head back to the doors. As you get to the door you realise something; your ID card is gone. You can&#39;t get in. You swear you had it before, you double checked before leaving home you... Was it the girl? Did you get pickpocketed? Today? Of all days?
 You&#39;re forced to wait until someone comes running up to the door, opening it, as you push in through the doors behind them.
 By the time you make it to the top of the office, you already know what&#39;s going to happen. Your supervisor looks up from his watch to you.
 &quot;4 minutes late. A shame. Better luck next time.&quot;
 
-[[A-&gt;Start]]
-(set:$rightblue3 to true)</tw-passagedata><tw-passagedata pid="17" name="LeftBlue2.2" tags="" position="2905,998" size="100,100">
+[[Try Again-&gt;Start]]
+(if:$rightblue3 is false)[(set:$endingscompleted to it + 1)]
+(set:$rightblue3 to true)</tw-passagedata><tw-passagedata pid="17" name="LeftBlue2.2" tags="" position="2905,998" size="100,100">You step up onto the segway behind Derrek and he was right, it is a tight squeeze. Your heels are hanging off the edge slightly and you&#39;re holding yourself up against him as tightly as possible.
+The segway jerks as it takes off and you almost immediately fall off. He starts slow so you can both get your balance, but after a few dozen meters of this speed he speaks up, &quot;we will never make it at this speed, I hope you&#39;re ready.&quot;
+You assure him that you&#39;re ready. You are not. The segway begins to swerve dangerously as Derrek attempts to counter balance both of your weights. You are left with no choice but to hold on and pray as people are forced to jump out of the way to avoid being hit by you.
+You get the the end of the street and Derrek attempts to turn but instead sends you both speeding onto the road. You collide into the front of a car, which was luckily not moving because of the traffic, and you both flip over the hood of the car.
+You attempt to reorient yourself and make sense of the situation, and you see a huge dent where the segway hit the car. The driver is already getting out and yelling obscenities and cars are blaring their horns for you to move.
+The driver demands you both give him your information for insurance sakes, and even though you consider running you think better of it because Derrek knows you and could dob you in.
+Once the driver finally lets you go, you both hobble your way towards your office and awkwardly make your way up to the meeting room. As you both push your way into the room, the three superiors look at you and the state you&#39;re in, but show no outward sign of their thoughts.
+&quot;12 minutes late, and in desperate need of a new outfit. Hopefully next time you don&#39;t get yourself into so much trouble.&quot;
 
-[[A-&gt;Start]]
+[[Try Again-&gt;Start]]
+(if:$leftblue2 is false)[(set:$endingscompleted to it + 1)]
 (set:$leftblue2 to true)
-</tw-passagedata><tw-passagedata pid="18" name="LeftGreen3.1" tags="" position="2701,1002" size="100,100">
+</tw-passagedata><tw-passagedata pid="18" name="LeftGreen3.1" tags="" position="2702,1000" size="100,100">You push Derrek out of the way, trying not to push him too hard to harm him
 
 [[A-&gt;Start]]
-(set:$leftgreen3 to true)</tw-passagedata><tw-passagedata pid="19" name="LeftBlue1.2" tags="" position="2501,798" size="100,100">
+(if:$leftgreen3 is false)[(set:$endingscompleted to it + 1)]
+(set:$leftgreen3 to true)</tw-passagedata><tw-passagedata pid="19" name="LeftBlue1.2" tags="" position="2501,796" size="100,100">You hold on tight as the bike pulls away. She takes the corners with speed and a decent amount of skill but you are left feeling constantly on the edge of danger.
+After a few minutes you feel the bike slow down and come to a stop. You are not at work. You are still in a backstreet. Grace curses beneath her breath and you realise what&#39;s happened. She is lost. You are lost with her.
+&quot;Oh hang on, I know what happened,&quot; Grace says reassuringly, &quot;it was the last turn we made I&#39;m sure of it. We should have gone left instead of right. Don&#39;t worry, we can still make it.&quot;
+You notice a hint of hesitation and worry in her voice and remember how certain she sounded when starting this trip. You have a pretty decent memory for directions and could guide her back the way you came, or you can hope that she knows what she&#39;s doing and make it to work within the next 2 minutes.
 
 
-[[A-&gt;LeftBlue1.3]]
-[[[A-&gt;LeftGreen2.1]]](leftgreen2|
+[[It&#39;s not worth getting any more lost, press her to go back the way you came. Hopefully you aren&#39;t too late-&gt;LeftBlue1.3]]
+[[[You&#39;ve come this far, no harm trying a little harder to get to work.-&gt;LeftGreen2.1]]](leftgreen2|
 
-(if: $leftblue1 is true)(show:?leftgreen2)</tw-passagedata><tw-passagedata pid="20" name="LeftGreen2.1" tags="" position="2298,1001.3333333333334" size="100,100">
+(if: $leftblue1 is true)(show:?leftgreen2)</tw-passagedata><tw-passagedata pid="20" name="LeftGreen2.1" tags="" position="2298,1001" size="100,100">You will put your trust in Grace and just hope for the best at this point. Grace speeds off back down the way you came, correcting the turn that she said was wrong and continuing on down more back streets that way.
+In just a couple of minutes she comes to a stop again, and you are ready to be disappointed and frustrated before you realise where you are. The building next to you is your office building! You just didn&#39;t recognise at first because you are behind it.
+You both share a moment of celebration, checking the time to see you still have two minutes to get to the meeting. You&#39;ve done it! You leave Grace to set aside the bike as you run towards the nearest door.
+It doesn&#39;t open. It&#39;s locked. You don&#39;t see any card scanner on it. The anxiety builds as you look around for another door and after 30 seconds of running back and forth you find nothing. And there&#39;s no way to get to the front of the building.
+You turn to look at Grace with accusation in your eyes.
+She sheepishly avoids eye contact, &quot;so I might have forgotten to check whether or not there was a way in from the back. I&#39;m so sorry! It&#39;s my fault!&quot;
+You realise there&#39;s no point arguing now, and instead walk back towards the bike, followed by Grace. In silence you both get on the bike and take off once again, back the way you came to the main street, and then around to the front of the office this time.
+By the time you get to the meeting, the frustration from before has faded and left you feeling deflated. You open the door to see your three superiors staring back.
+One looks up from his watch and speaks, &quot;20 minutes late. Not a great start to the day. Next time I&#39;m sure you&#39;ll make better decisions.&quot;
 
-[[A-&gt;Start]]
-(set:$leftgreen2 to true)</tw-passagedata><tw-passagedata pid="21" name="LeftBlue1.3" tags="" position="2501,1001" size="100,100">
+[[Try Again-&gt;Start]]
+(if:$leftgreen2 is false)[(set:$endingscompleted to it + 1)]
+(set:$leftgreen2 to true)</tw-passagedata><tw-passagedata pid="21" name="LeftBlue1.3" tags="" position="2499,1001" size="100,100">You guide Grace back the way you came and then out onto the road. You find yourselves caught in a bit of traffic but Grace does a good job of slipping through it and making pretty decent time.
+Unfortunately with the combination of getting lost and the traffic, by the time you get to work you&#39;ve missed the deadline. You both sheepishly make your way inside, ditching the bike by the door.
+She apologises to you for the mistake as you make your way upstairs and you assure her that it was worth a shot, you probably would have been late on the bus anyway.
+As you reach the meeting room, you push the door open for you both to enter and are greeted by your three superiors standing before you. &quot;A two for one deal, it&#39;s a shame you weren&#39;t twice as fast. 12 minutes late. Both of you try harder next time.&quot;
 
-[[A-&gt;Start]]
+[[Try Again-&gt;Start]]
+(if:$leftblue1 is false)[(set:$endingscompleted to it + 1)]
 (set:$leftblue1 to true)</tw-passagedata><tw-passagedata pid="22" name="LeftGreen1.1" tags="" position="2105,798" size="100,100">
 
 
@@ -245,40 +222,96 @@ By the time you make it to the top of the office, you already know what&#39;s go
 (if: $leftgreen is true)(show:?leftorange1)</tw-passagedata><tw-passagedata pid="23" name="LeftGreen1.2" tags="" position="2101,1003" size="100,100">
 
 [[A-&gt;Start]]
-(set:$leftgreen1 to true)</tw-passagedata><tw-passagedata pid="24" name="LeftOrange1.1" tags="" position="1900,999" size="100,100">
+(if:$leftgreen1 is false)[(set:$endingscompleted to it + 1)]
+(set:$leftgreen1 to true)</tw-passagedata><tw-passagedata pid="24" name="LeftOrange1.1" tags="" position="1903,999" size="100,100">
 
 [[A-&gt;Start]]
-(set:$leftorange to true)</tw-passagedata><tw-passagedata pid="25" name="RightBlue1.2" tags="" position="4501,803" size="100,100">
+(if:$leftorange is false)[(set:$endingscompleted to it + 1)]
+(set:$leftorange to true)</tw-passagedata><tw-passagedata pid="25" name="RightBlue1.2" tags="" position="4502,803" size="100,100">You pedal harder, trying to get away before she gets a good look at your face. As you are riding you hear a shrill whistle from behind you. You spare one more glance behind you to see a Mini pull up to the curb as seven clowns exit with unicycles in hand before mounting and speeding towards you.
+Much to your surprise, the mounted clowns are particularly fast, but hopefully not quite fast enough. You think you might be able to maintain enough distance to get to work and leave the bike outside for them to collect.
+
+[[You never know what a clown has up their sleeve, give up the chase.-&gt;RightBlue1.3]]
+[[[Ride fast and ride hard, get to work before the clowns catch you.-&gt;RightGreen2.1]]](rightgreen2|
+
+(if: $rightblue1 is true)(show:?rightgreen2)</tw-passagedata><tw-passagedata pid="26" name="RightGreen1.1" tags="" position="4899,803" size="100,100">You stop your bike in the middle of the path and sheepishly dismount as the clown approaches. You begin formulating an explanation in your head, hoping you can get away with this somehow, but before you can begin talking, she does.
+&quot;Well this is certainly unusual. You don&#39;t look like a typical somebody in the business of theft. Except maybe corporate theft!&quot; She honks her nose and strikes a pose at this, but you are too confused to formulate a response.
+&quot;Let me guess, late for work? Honestly understandable. Sometimes they just place such intense expectations on us don&#39;t they? Well how about me and the crew give you a ride, and you can help us workshop some material in exchange, then there&#39;s no hard feelings?&quot;
 
 
-[[A-&gt;RightBlue1.3]]
-[[[A-&gt;RightGreen2.1]]](rightgreen2|
+[[Take her up on the offer, doesn&#39;t seem too high of a price, all things considered.-&gt;RightGreen1.2]]
+[[[Politely decline, you&#39;re not in the mood for clowns right now-&gt;RightOrange1.1]]](rightorange|
 
-(if: $rightblue1 is true)(show:?rightgreen2)</tw-passagedata><tw-passagedata pid="26" name="RightGreen1.1" tags="" position="4899,803" size="100,100">
+(if: $rightgreen1 is true)(show:?rightorange1)</tw-passagedata><tw-passagedata pid="27" name="RightBlue2.2" tags="" position="4103,999" size="100,100">You politely decline and begin to back away as the older man gets into his car to drive away. As you return to the main street you pull out your phone to check how long it will take to get to work now. It&#39;s not good. You won&#39;t make it. Unless you run.
+You ready yourself for the strange looks you&#39;ll get running through the city dressed in business casual and begin your trip. After only a few moments you hear a shout from behind you.
+&quot;Hey! You! We aren&#39;t done here!&quot;
+You glance quickly over your shoulder to see the brute from before coming your way. Quickly. It seems he recovered faster than you expected. You should have moved faster. Maybe you would have been safer in the car after all.
+You only have one choice now. Run. If you can get to your office first, you&#39;ll be safe. But you&#39;re not a practiced runner, and these shoes aren&#39;t build for speed or even comfort.
+You push yourself as hard as you can, bumping past people too slow to move out of your way, constantly aware of the shouts getting closer and closer. You turn the corner to see your office ahead. You might make it. You put everything you have into running, pushing aside any thoughts of maintaining composure.
+You are a few steps from the door as you pull out your ID card. As you place it upon the scanner you find yourself flying hips first to the side as the brute tackles you with all the force of a bull. Pain rains down on you as you collapse into a ball.
+Some time later you feel your mind and sense clear as you pick yourself up off the ground. You do your best to tidy yourself, to little avail, and make your way inside.
+As you finally get to your office you see your superiors staring at you with looks of both confusion and disappointment.
+&quot;12 minutes late this time. And I&#39;ll avoid asking about the state you&#39;re in. I&#39;d recommend avoiding fights on the way to work next time.&quot;
 
-
-[[A-&gt;RightGreen1.2]]
-[[[A-&gt;RightOrange1.1]]](rightorange1|
-
-(if: $rightgreen1 is true)(show:?rightorange1)</tw-passagedata><tw-passagedata pid="27" name="RightBlue2.2" tags="" position="4103,1001" size="100,100">
-
-[[A-&gt;Start]]
+[[Try Again-&gt;Start]]
+(if:$rightblue2 is false)[(set:$endingscompleted to it + 1)]
 (set:$rightblue2 to true)
-</tw-passagedata><tw-passagedata pid="28" name="RightGreen3.1" tags="" position="4299,999" size="100,100">
+</tw-passagedata><tw-passagedata pid="28" name="RightGreen3.1" tags="" position="4299,999" size="100,100">You accept the offer and glance at the man on the ground as you make your way to the passenger seat. You notice the man&#39;s fingers begin to twitch and hear a slight groan eminating from him. You hasten yourself as you get into the car and shut the door, quickly locking the door as a precaution.
+It takes you a few seconds as the car begins to move to realise that while staring at the man on the ground that you hadn&#39;t given the older man your address yet, so where is he-
+Suddenly you are forced back into your chair as the car speeds off, interupting your train of thought. The car swerves across traffic out onto the road, heading in the opposite direction from where you need to be going.
+&quot;Don&#39;t worry,&quot; the older man says looking across to you with a reassuring smile, &quot;just have to evade the police first, should only take a moment.&quot;
+&quot;What police-&quot; you begin to ask before he cuts you off with a raise of his hand.
+&quot;Better off not knowing, wouldn&#39;t want them thinking you&#39;re an accomplice would you?&quot; He winks at you again, and you are left feeling incredibly uncomfortable.
+You hear sirens in the distance and as you turn to look out of the back window you definitely see flashing lights. It&#39;s too late to get out of this, you can only hope this man knows what he&#39;s doing, and given his ability to weave through traffic and keep up unreasonable speeds, he actually might.
+You are holding on to anything you can in the car with a white knuckle grip as you are driven through the streets. Eventually he pulls into a small parking area and he tells you to put your head down. After a few moments and the passing of sirens and lights, he calmly pulls back out onto the road.
+He asks where you&#39;re headed, and although you hesistate at first, you tell him, and he quickly and efficiently gets you where you need to be. You reluctantly thank the man before he pulls off, before making your way into the building.
+Upon reaching the meeting room, you are greeted by your three superiors.
+&quot;15 minutes late, although by the look in your eye you experienced enough to last a year. Hopefully next time will be both less eventful and less tardy.&quot;
 
-[[A-&gt;Start]]
-(set:$rightgreen3 to true)</tw-passagedata><tw-passagedata pid="29" name="RightBlue1.3" tags="" position="4505,996" size="100,100">
+[[Try Again-&gt;Start]]
+(if:$rightgreen3 is false)[(set:$endingscompleted to it + 1)]
+(set:$rightgreen3 to true)</tw-passagedata><tw-passagedata pid="29" name="RightBlue1.3" tags="" position="4506,996" size="100,100">You decide your best option is just to give in, there is something incredibly intimidating about being chased by clowns on unicycles.
+You dismount and prepare yourself to make as many apologies as necessary. When the clowns catch up to you they are very polite and quick to accept your apologies but aren&#39;t willing to forgive you too quickly. Instead they demand that you help them out by riding the bike back to their car before they let you leave.
+You are hesitant to ride away from work but being surrounded by clowns leaves you unwilling to disobey. So you remount the bike, and make your way back to the car as quickly as you can before quickly apologising once again and taking your leave.
+You run as fast as you can to work, knowing full well being on time is long since past possible. You rush inside, bounding up the stairs, and carrying yourself down the corridors with no grace or dignity before charging into the meeting room.
+The superiors watch you, giving no sign of their feelings towards your entrance. Except for their obvious feelings about your timing. &quot;18 minutes. I&#39;d hoped for better from you. Better luck next time.&quot;
 
-[[A-&gt;Start]]
-(set:$rightblue1 to true)</tw-passagedata><tw-passagedata pid="30" name="RightGreen2.1" tags="" position="4704,998" size="100,100">
 
-[[A-&gt;Start]]
-(set:$rightgreen2 to true)</tw-passagedata><tw-passagedata pid="31" name="RightGreen1.2" tags="" position="4905,995" size="100,100">
+[[Try Again-&gt;Start]]
+(if:$rightblue1 is false)[(set:$endingscompleted to it + 1)]
+(set:$rightblue1 to true)</tw-passagedata><tw-passagedata pid="30" name="RightGreen2.1" tags="" position="4707,998" size="100,100">You pedal as hard as you can, standing up to get a better speed. You only spare a few glances over your shoulder only to be reaffirmed that the clowns are keeping up and gaining slightly.
+It is a somewhat surreal experience you think to yourself. Suddenly you see a bowling pin fly past you onto the ground just to your right. You look back to see the clowns pulling out the most strange assortment of items from within their many pockets.
+With no need for hands to guide themselves, they are left with hands free for juggling. You are suddenly pelted with all sorts of items, from food to balls to a knife you aren&#39;t sure is real or fake.
+The crowd parts ahead of you making the ride easier but that is balanced with the need to swerve to avoid the debris. You turn a corner to see the office ahead of you, and for a few blissful moments you are free from the harrassment.
+That lasts up until a baton lands on the ground in front of you before bouncing perfectly into your spokes, catching and causing the bike to flip over itself. You are dazed for a moment and when you come to you are surrounded by clowns.
+You pull your hands up to your face to protect you but no attack comes. Instead they insist that in exchange for taking their bike, you will help them clean up the mess they made throwing things at you.
+You agree out of guilt and some small fear for what would happen otherwise, and quickly gather all the items before running off to work. You speed to the meeting room and crash through the doors.
+There is barely a reaction from the 3 supervisors standing before you as one looks up from his watch. &quot;22 minutes. Not the worst effort but far from the best. Do try harder next time.&quot;
 
-[[A-&gt;Start]]
-(set:$rightgreen1 to true)</tw-passagedata><tw-passagedata pid="32" name="RightOrange1.1" tags="" position="5099,999" size="100,100">
+[[Try Again-&gt;Start]]
+(if:$rightgreen2 is false)[(set:$endingscompleted to it + 1)]
+(set:$rightgreen2 to true)</tw-passagedata><tw-passagedata pid="31" name="RightGreen1.2" tags="" position="4905,995" size="100,100">&quot;Excellent!&quot; She exclaims, before pulling out a whistle and blowing hard on it. A moment later a car Mini pulls up at the curb, and the backseat door opens from the inside. The clown woman gestures for you to enter first, so you do.
+Words fail to describe the experience you have clambering into the car as you are shifted across multiple sets of laps and jostled around until you somehow find yourself amidst a row of five clowns somehow all pressed into the back of this car, with three more in the front.
+You give the address of your work, and before the car can even take off the clowns have already begun what seems to be only a semi-practiced comedy routine. You&#39;re unsure if it is supposed to be improvised or not but following whats happening is difficult.
+It only takes a few minutes for the car to arrive outside your work but when you get there, the clowns seem unwilling to stop a performance halfway. Every time you try to shift your weight towards leaving the car, or interject to ask to get out, you are hushed and replaced in your seat.
+After what feels like an eternity to you, the female clown from before interrupts the act. &quot;Okay everyone, we will leave it here at the intermission, and pick it up later.&quot; She looks you in the eye before continuing, &quot;we will see you once your day is done, have a good one.&quot;
+Before you can respond you are suddenly pushed and shoved until you are on the footpath in front of your office, as the door shuts behind you. You pick yourself up and make your way into the building, glancing over your shoulder to see too many clown eyes staring back at you through the windows of the car.
+Once you finally make it up to the meeting, the thought of continuing that experience after work haunting you, you are greeted by the three supervisors.
+&quot;48 minutes, you certainly don&#39;t look like someone in a rush to be on time. Better luck next time.&quot;
 
-[[A-&gt;Start]]
+[[Try Again-&gt;Start]]
+(if:$rightgreen1 is false)[(set:$endingscompleted to it + 1)]
+(set:$rightgreen1 to true)</tw-passagedata><tw-passagedata pid="32" name="RightOrange1.1" tags="" position="5099,999" size="100,100">You turn and walk away as the clown speaks.
+&quot;It&#39;s very rude to turn down such an offer, after all I was being very generous.&quot; You hear the heavy clown footsteps following behind you as you begin to pick up your pace.
+You see the crowd part ahead of you revealing another clown walking towards you. You immediately turn to cross the street to see two more clowns crossing towards you.
+You see a sidestreet between you and the clown ahead and dash for it. As you turn into it you can here the clumsy but quick footsteps of clowns chasing you.
+Everywhere you go you see more clowns as you turn down more and more side streets to escape until eventually you find yourself at a dead end. You turn to face the now 20 clowns with your hands raised high and looking as non-threatening as you can.
+Instead of attacking you, they beckon for you to sit before bustling around pulling out props that were tucked away in their oversized clothes. Eventually the woman from earlier steps forward and says, &quot;welcome to our first rehearsal of our show. Enjoy!&quot;
+You sit and watch in silence for what seems an eternity as the clowns perform a very unpracticed and clumsy routine that seems equal parts planned and improvisation.
+At the end they ask you a few questions and you answer as quickly and honestly as you can before being let go, with seemingly no further punishment to come.
+By the time you make it to work you are mentally exhausted, and you step into the meeting room shoulders slouched. Three descerning pairs of eyes are watching you. &quot;1 hour and 20 minutes. Your demeanour suggests some sort of harrowing experience... Nonetheless you were late. Hopefully you will fair better next time.&quot;
+
+[[Try Again-&gt;Start]]
+(if:$rightorange is false)[(set:$endingscompleted to it + 1)]
 (set:$rightorange to true)</tw-passagedata><tw-passagedata pid="33" name="True Ending" tags="" position="3500,1696" size="100,100">The truest ending</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
